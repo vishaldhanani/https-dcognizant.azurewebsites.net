@@ -1,0 +1,328 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Dcognizant.Master.cs" Inherits="Dcognizant.Dcognizant" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+    <title>Dcognizant</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+
+    <!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900|Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i,900" rel="stylesheet" />
+
+    <!--Bootstrap Stylesheet-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <!--Font Awesome Stylesheet-->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+    <!--Popup Stylesheet-->
+    <link rel="stylesheet" type="text/css" href="css/popup.css" />
+    <!--Animate Stylesheet-->
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <!--Country Flags Styleshee -->
+    <link rel="stylesheet" type="text/css" href="css/flags.css" />
+    <!--Main Stylesheet-->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!--Responsive Stylesheet-->
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+    <!-- Style Color Switcher Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/switcher-colors.css" />
+
+    <!-- Custom Colors Stylesheets -->
+
+    <!--
+    <link rel="stylesheet" type="text/css" href="css/custom-colors/color-one.css">
+    <link rel="stylesheet" type="text/css" href="css/custom-colors/color-two.css">
+    <link rel="stylesheet" type="text/css" href="css/custom-colors/color-three.css">
+    <link rel="stylesheet" type="text/css" href="css/custom-colors/color-four.css">
+    <link rel="stylesheet" type="text/css" href="css/custom-colors/color-five.css">
+    <link rel="stylesheet" type="text/css" href="css/custom-colors/color-six.css">
+    <link rel="stylesheet" type="text/css" href="css/custom-colors/color-seven.css">
+    <link rel="stylesheet" type="text/css" href="css/custom-colors/color-eight.css">
+    <link rel="stylesheet" type="text/css" href="css/custom-colors/color-nine.css">
+    <link rel="stylesheet" type="text/css" href="css/custom-colors/color-ten.css">
+    <link rel="stylesheet" type="text/css" href="css/custom-colors/color-eleven.css">
+    -->
+
+    <!-- Modanizr JS -->
+    <script src="js/modernizr.custom.js"></script>
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="site-preloader">
+        <!--Satrt Site Preloader-->
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+    </div>
+    <!--End Site preloader-->
+
+    <div class="site-color-panel">
+        <!--Satrt Color Panel-->
+        <div class="site-color-panel-box">
+            <div class="color-panel-spinner">
+                <a class="color-panel-icon" href="#"><i class="fa fa-cog fa-spin"></i></a>
+            </div>
+            <h3 class="text-center">Color Switcher</h3>
+            <p class="text-center">Choose Your Color</p>
+            <div class="switcher-colors">
+                <span class="color-base"></span>
+                <span class="color-one"></span>
+                <span class="color-two"></span>
+                <span class="color-three"></span>
+                <span class="color-four"></span>
+                <span class="color-five"></span>
+                <span class="color-six"></span>
+                <span class="color-seven"></span>
+                <span class="color-eight"></span>
+                <span class="color-nine"></span>
+                <span class="color-ten"></span>
+                <span class="color-eleven"></span>
+            </div>
+        </div>
+    </div>
+    <!--End Color Panel-->
+
+    <div class="site-wrapper">
+
+        <!-- Start Site Wrapper -->
+        <header class="header">
+            <!--Start Header-->
+
+            <div class="clearfix"></div>
+            <div class="mainmenu">
+                <!--Start Main Menu-->
+                <div class="conatiner">
+                    <!--Start Container-->
+                    <nav class="navbar navbar-default">
+                        <!--Start Nav-->
+                        <div class="container">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand" href="frmIndex.aspx">
+                                    <img class="img-responsive" src="images/Dcognizant.png" alt="" style="max-width:160px" /></a>
+                            </div>
+
+                            <div id="navbar" class="navbar-collapse collapse">
+                                <ul class="nav navbar-nav">
+                                    <!--Start Menu List-->
+                                    <li runat="server" id="LiHome"><a href="Home">Home</a></li>
+                                    <li runat="server" id="LiAbout"><a href="About">About Us</a></li>
+                                    <li class="dropdown has-submenu" runat="server" id="LiSubmenu">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="fa fa-angle-down"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li runat="server" id="LiWebAppDevelopment"><a href="WebAppDevelopment">Web Development Service</a></li>
+                                            <li runat="server" id="LiWebDesign"><a href="WebDesign">Web Design Service</a></li>
+                                            <li runat="server" id="LiDynamicNAV"><a href="DynamicNAV">Microsoft Dynamics NAV Implementation</a></li>
+                                            <li runat="server" id="LiDynamic365"><a href="Dynamic365">Dynamics 365 Business central</a></li>
+                                            <li runat="server" id="LiSharepointDevelopment"><a href="SharepointDevelopment">Sharepoint Development</a></li>
+                                            <li runat="server" id="LiIOSDevelopment"><a href="IOSDevelopment">IOS App Development</a></li>
+                                            <li runat="server" id="LiAndroidDevelopment"><a href="AndroidDevelopment">Android App Development</a></li>
+                                        </ul>
+                                    </li>
+                                   <%-- <li><a href="#">Portfolio</a></li>--%>
+                                    <li runat="server" id="LiContact"><a href="Contact">Contact Us</a></li>
+                                </ul>
+                                <!--End Menu List-->
+                            </div>
+                        </div>
+                    </nav>
+                    <!--End Nav-->
+                </div>
+                <!--End Container-->
+            </div>
+            <!--End Main Menu-->
+        </header>
+        <!--End Header-->
+
+        <asp:ContentPlaceHolder ID="body" runat="server">
+        </asp:ContentPlaceHolder>
+        <div class="clearfix"></div>
+        <footer class="footer">
+            <!--Start Footer Section-->
+            <div class="container">
+                <div class="footer-support">
+                    <!--Start Footer Support-->
+                    <ul class="footer-suprt-items">
+                        <li><i class="fa fa-headphones"></i> 24/7 Customer Support</li>
+                        <li><i class="fa fa-envelope"></i> mail.dcognizant@gmail.com</li>
+                        <li><i class="fa fa-comments"></i> Open Support Ticket</li>
+                        <li><i class="fa fa-phone"></i> +1 972-876-2215 </li>
+                    </ul>
+                </div>
+                <!--End Footer Support-->
+            </div>
+            <div class="footer-widget">
+                <!--Start Footer Widget-->
+                <div class="container">
+                    <!--Start Conatiner-->
+                    <div class="row">
+                        <!--Start Footer Widget Row-->
+                        <div class="col-md-4 col-sm-4">
+                            <!--Start Footer Widget First Coloum-->
+                            <div class="widget-contact">
+                                <a href="frmIndex.aspx">
+                                    <img class="img-responsive" src="images/Dcognizant-white.png" alt="" style="max-width:161px" /></a>
+                                <p class="text-left"></p>
+
+                                <div class="widget-newsletter">
+                                    <div class="widget-social">
+                                        <h3>Follow Us</h3>
+                                        <ul>
+                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                            <li><a class="fat" href="#"><i class="fa fa-facebook"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                            <li><a class="thin" href="#"><i class="fa fa-google-plus"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--End Footer Widget First Coloum-->
+
+                        <div class="col-md-4 col-sm-4">
+                            <div class="widget-contact">
+                                <div class="widget-address">
+                                    <h3 class="text-left"><span><i class="fa fa-map-marker"></i></span>Address:</h3>
+                                    <p class="text-left">1414 Shiloh Rd, Plano Texas-75074, USA</p>
+                                    <h3 class="text-left"><span><i class="fa fa-mobile fa-lg"></i></span>Mobile Numbers:</h3>
+                                    <p class="text-left">
+                                        +1 972-876-2215
+                                        <br />
+                                        +91 800-083-4681
+                                    </p>
+                                    <h3 class="text-left"><span><i class="fa fa-envelope"></i></span>Email Address:</h3>
+                                    <p class="text-left ex">mail.dcognizant@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--End Footer Widget Second Coloum-->
+
+                        <div class="col-md-4 col-sm-4">
+                            <!--Start Footer Widget Third Coloum-->
+                            <h2 class="widget-title text-left">Userful Links</h2>
+                            <ul class="widget-list">
+                                <li><i class="fa fa-long-arrow-right"></i><a runat="server" id="LinHome" href="Home">Home</a></li>
+                                <li><i class="fa fa-long-arrow-right"></i><a runat="server" id="LinAbout" href="About">About Us</a></li>
+                                <li><i class="fa fa-long-arrow-right"></i><a runat="server" id="LinContact"  href="Contact">Contact</a></li>
+                                <%--<li><i class="fa fa-long-arrow-right"></i><a href="#">Contacts</a></li>--%>
+                            </ul>
+                        </div>
+                        <!--End Footer Widget Third Coloum-->
+
+                        <div class="totop">
+                            <!--Start ClickToTop-->
+                            <a href="#top"><i class="fa fa-angle-up"></i></a>
+                        </div>
+                        <!--End ClickToTop-->
+                    </div>
+                    <!--End Footer Widget Row-->
+                </div>
+                <!--End Conatiner-->
+            </div>
+            <!--End Footer Widget-->
+
+            <div class="footer-copyright">
+                <!--Start Footer Copyright-->
+                <div class="container">
+                    <!--Start Container-->
+                    <div class="row">
+                        <div class="copyright-text">
+                            <p class="text-center">Copyright &copy; 2019 Docognizant. All rights reserved.</p>
+                        </div>
+                    </div>
+                </div>
+                <!--End Container-->
+            </div>
+            <!--End Footer Copyright-->
+        </footer>
+        <!--End Footer Section-->
+
+        <%--<div class="live-chat-wrapper">
+            <!--Start Live Chat Wrapper-->
+            <div class="panel panel-primary">
+                <!--Start Chat Panel-->
+                <div class="panel-heading" id="chat-accordion">
+                    <a class="btn btn-primary btn-block btn-xs collapsed" data-toggle="collapse" data-parent="#chat-accordion" href="#collapseChat">
+                        <span><i class="fa fa-circle"></i></span>Customer Support
+                    </a>
+                </div>
+                <div class="panel-collapse collapse" id="collapseChat">
+                    <!--Start Collapse Panel-->
+                    <div class="panel-body">
+                        <ul class="live-chat-message">
+                            <li class="left clearfix">
+                                <span class="live-chat-img">
+                                    <img src="images/avator-1.png" alt="User Avatar" class="img-circle img-responsive alignleft" />
+                                </span>
+                                <div class="live-chat-body clearfix">
+                                    <div class="live-chat-header">
+                                        <strong class="primary-font">John Doe</strong> <small class="pull-right chat-text">
+                                            <span class="fa fa-clock-o"></span>15 mins ago</small>
+                                    </div>
+                                    <p>Hello, I want to buy web hosting!</p>
+                                </div>
+                            </li>
+
+                            <li class="left clearfix">
+                                <span class="live-chat-img">
+                                    <img src="images/avator-2.png" alt="User Avatar" class="img-circle img-responsive alignleft" />
+                                </span>
+                                <div class="live-chat-body clearfix">
+                                    <div class="live-chat-header">
+                                        <strong class="primary-font support-staff">Support</strong> <small class="pull-right chat-text">
+                                            <span class="fa fa-clock-o"></span>16 mins ago</small>
+                                    </div>
+                                    <p>Hey John! Welcome to the SHOST Support Center!</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="panel-footer">
+                        <!--Start Panel Footer-->
+                        <div class="input-group">
+                            <input id="btn-input" type="text" class="form-control input-sm" placeholder="Type your message here..." />
+                            <span class="input-group-btn">
+                                <button class="btn btn-default btn-sm" id="btn-chat">Send</button>
+                            </span>
+                        </div>
+                    </div>
+                    <!--End Panel Footer-->
+                </div>
+                <!--End Collapse Panel-->
+            </div>
+            <!--End Chat Panel-->
+        </div>--%>
+        <!--End Live Chat Wrapper-->
+
+    </div>
+
+    <!-- jQuery JS -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Waypoints JS -->
+    <script src="js/waypoints.js"></script>
+    <!-- Magnific JS -->
+    <script src="js/jquery.magnific-popup.js"></script>
+    <!-- Country Select JS -->
+    <script src="js/jquery.flagstrap.js"></script>
+    <!-- Counterup JS -->
+    <script src="js/jquery.counterup.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- Main JS -->
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

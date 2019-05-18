@@ -1,0 +1,35 @@
+Menus - HOME 	ABOUT US    SERVICES    PORTFOLIO    CONTACT US
+
+HOME PAGE -- THREE IMAGE SLIDER 
+
+WHY CHOOSE --
+AWESOME SERVICES
+
+Show four services - Web App Development & Design,  Microsoft Dynamics NAV Implementation & Dynamics 365 Business central, Sharepoint Development, IOS App Development, Android App development
+
+HAPPY CLIENTS
+
+AWARDS WINNED  
+
+HOURS WORKED
+
+COMPLETE PROJECT
+
+WHY CHOOSE US?  -- Add few details -- find some details from other websites
+
+Client's Review--
+
+Some of our trusted clients.
+
+Page bottom as it is, just need to update details.
+
+
+About us page --
+Use some content from other website as well as Dataligence, Mindquad solutions pvt ltd., Intech Systems Pvt. Ltd.
+
+
+OUR EXPERT TEAM
+Will provide details
+
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3345.576250173143!2d-96.66499058532935!3d33.01494567912371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c1bdf5c0c9ddb%3A0x8b6799e202083ae7!2s1414+Shiloh+Rd%2C+Plano%2C+TX+75074%2C+USA!5e0!3m2!1sen!2sin!4v1553963852737!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
